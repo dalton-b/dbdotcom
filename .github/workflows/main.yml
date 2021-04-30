@@ -2,7 +2,7 @@ name: main
 
 on:
   schedule:
-    - cron: "0 15 * * *" # runs every day at 3pm
+    - cron: "5 15 * * *" # runs every day at 3:05pm
 
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
           path: dbdotcom
       - name: Copy html to dbdotcom
         run: |
-          cp predictit-bot/requirements.txt dbdotcom
+          cp predictit-bot/predictit-forecasting.html dbdotcom
           cd dbdotcom
           git config --local user.name "dalton-b"
           git add .
