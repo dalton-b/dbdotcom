@@ -21,7 +21,7 @@ jobs:
           path: dbdotcom
       - name: Copy html to dbdotcom
         run: |
-          cp predictit-bot/predictit-forecasting.html dbdotcom
+          cp predictit-bot/requirements.txt dbdotcom
           cd dbdotcom
           git config --local user.name "dalton-b"
           git add .
