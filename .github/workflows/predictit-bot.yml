@@ -1,8 +1,8 @@
 name: main
 
-on:
-  schedule:
-    - cron: "15 15 * * *" # runs every day at 3:15pm GitHub time
+# on:
+#   schedule:
+#     - cron: "15 15 * * *" # runs every day at 3:15pm GitHub time
 
 jobs:
   build:
